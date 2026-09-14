@@ -32,6 +32,18 @@ flowchart LR
     G --> A[Analytics / BI]
 ```
 
+### Data Flow
+
+![Data warehouse flow](docs/diagrams/data%20flow.drawio.png)
+
+### Source Integration Model
+
+![CRM and ERP integration model](docs/diagrams/data%20inegrtion%20model.drawio.png)
+
+### Gold Star Schema
+
+![Gold layer star schema](docs/diagrams/data%20mart%20gold%20layer.drawio.png)
+
 ### Bronze — Raw Ingestion
 
 Source data is loaded into SQL Server with minimal transformation using `BULK INSERT` and a stored procedure.
@@ -99,7 +111,10 @@ The expected local dataset layout is documented in [`datasets/README.md`](datase
 │   └── diagrams/
 │       ├── 01_data_flow.drawio
 │       ├── 02_data_integration_model.drawio
-│       └── 03_data_mart_gold_layer.drawio
+│       ├── 03_data_mart_gold_layer.drawio
+│       ├── data flow.drawio.png
+│       ├── data inegrtion model.drawio.png
+│       └── data mart gold layer.drawio.png
 ├── scripts/
 │   ├── setup/
 │   │   └── 00_init_database.sql
@@ -204,7 +219,7 @@ Run reusable queries under `analytics/` for:
 - [Data Dictionary](docs/data_dictionary.md)
 - [Source Data Profile](docs/data_profile.md)
 - [Dataset Setup](datasets/README.md)
-- Draw.io architecture diagrams under `docs/diagrams/`
+- PNG architecture previews and editable Draw.io source files under `docs/diagrams/`
 
 ## Key Engineering Features
 
