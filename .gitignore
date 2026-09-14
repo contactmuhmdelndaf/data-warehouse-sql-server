@@ -1,0 +1,19 @@
+# Local SQL Server / IDE files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local datasets
+# Source CSVs are intentionally kept out of Git unless redistribution is confirmed.
+datasets/**/*.csv
+
+# Temporary exports
+*.bak
+*.tmp
